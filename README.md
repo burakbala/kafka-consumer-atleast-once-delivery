@@ -1,7 +1,7 @@
-# KAFKA CONSUMER AT-LEAST-ONCE DELIVERY WITH FAILURES
+### KAFKA CONSUMER AT-LEAST-ONCE DELIVERY WITH FAILURES
 Experimenting with kafka consumer/producer to achieve at least once delivery with failures during business logic
 
-# REACTIVE KAFKA COMMITTABLE SOURCE
+#### REACTIVE KAFKA COMMITTABLE SOURCE
 	1. RUN
 		Record experiment 10 9 failed
 		Record experiment 10 1 failed
@@ -22,7 +22,7 @@ Experimenting with kafka consumer/producer to achieve at least once delivery wit
 	RESULT:
 		Some of the messages(1, 9, 6, 8) are lost. Processing some of the messages can only be achieved by restarting the consumer
 
-# KAFKA CONSUMER WITHOUT SEEK
+#### KAFKA CONSUMER WITHOUT SEEK
 	1. RUN
 		Record: experiment 13 1 failed
 		Record: experiment 13 2 processed
@@ -39,7 +39,7 @@ Experimenting with kafka consumer/producer to achieve at least once delivery wit
 	RESULT:
 		Some of the messages(1, 6, 8, 7, 9) are lost. Processing some of the messages could only be achieved by restarting the consumer
 
-# KAFKA CONSUMER WITH SEEK BACKWARDS FOR FAILED MESSAGES
+#### KAFKA CONSUMER WITH SEEK BACKWARDS FOR FAILED MESSAGES
 	1. RUN
 		Record: experiment 14 2 failed
 		Record: experiment 14 4 failed
